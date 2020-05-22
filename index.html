@@ -8,7 +8,7 @@
     <meta name="description" content="The HTML5 Herald" />
     <meta name="author" content="SitePoint" />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -17,8 +17,8 @@
     </header>
 
     <div class="scoreBoard">
-      <div id="user" clas="badge">user</div>
-      <div id="computer" clas="badge">computer</div>
+      <div id="user" class="badge">user</div>
+      <div id="comp" class="badge">computer</div>
       <span id="userScore">0</span>:<span id="compScore">0</span>
     </div>
 
@@ -26,6 +26,18 @@
       <p>Water beats fire. You win!</p>
     </div>
 
-    <div>class</div>
+    <div class="choices">
+      <div class="choice" id="water">
+        <img src="images/water.png" alt="water" />
+      </div>
+      <div class="choice" id="fire">
+        <img src="images/fire.png" alt="fire" />
+      </div>
+      <div class="choice" id="leaf">
+        <img src="images/leaf.png" alt="leaf" />
+      </div>
+    </div>
+    <p id="actionMessage">Make your move</p>
+    <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
